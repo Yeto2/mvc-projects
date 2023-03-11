@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar-logo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+}
+nav.navbar.navbar-expand-lg.bg-dark.bg-gradient {
+    padding: 15px 0px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-logo img{
+    width: 100px;
+}
+.navbar-toggler{
+    border: 1px solid white !important;
+}
+.modal-backdrop.show {
+    z-index: 3;
+}
+.navbar-nav button {
+    margin-left: 10px;
+}
+/** hero section */
+/* .alert.alert-success {
+    position: absolute;
+    top: 100px;
+} */
+div#alert {
+    transition: 0.6s;
+    position: absolute;
+    top: 120px;
+}
+.hero-sections {
+    background: #00000099;
+    height: calc(100vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+/* scoll mouse */
+.icon-scroll {
+    width: 30px;
+    height: 55px;
+    bottom: -155px;
+    position: absolute;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+}
+.icon-scroll::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    top: 11px;
+    left: 40%;
+}
+/* ---------carouseil */
+
+div#carouselExampleSlidesOnly {
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+img.d-block {
+    height: 100vh;
+    width: 100%;
+}
+
+/** club section */
+
+h3 {
+    font-size: 80px;
+}
+
+.club-section {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.clubs {
+    display: flex;
+    gap: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+.col-sm-4 {
+    margin-bottom: 20px;
+}
+
+.card-join {
+    border: 2px #0d6efd85 dashed !important;
+    border-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #7dacf117;
+}
+
+.card img {
+    height: 200px;
+    opacity: 0.9;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.card:hover img {
+    height: 200px;
+    opacity: 0.6;
+}
+/** sponsor section */
+section.sponsor-section {
+    background: #efefefab;
+    height: 80vh;
+}
+.headding {
+    text-align: center;
+    padding-top: 36px;
+}
+.logos {
+    height: 83%;
+    display: flex;
+    align-items: center;
+}
+.logos img {
+    height: 110px;
+    margin: 0px 90px;
+}
+
+/** --------- footer */
+footer .container img {
+    width: 180px;
+    margin-bottom: 25px;
+}
+footer {
+    background: #00000078;
+    color: white;
+    text-align: center;
+    padding: 45px 0px 0px;
+}
+.icons {
+    padding: 12px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 220px;
+    margin: 0px auto;
+}
+.icons svg{
+    cursor: pointer;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+.icons svg:hover{
+    color: #0d6efd;
+}
+
+.footTxt {
+    width: 65%;
+    margin: 0px auto;
+}
+p.copywrite {
+    padding: 10px 0px 15px !important;
+    font-weight: 600;
+    margin-bottom: 0px !important;
+}
+p.copywrite a {
+    text-decoration: none;
+    color: #038dfe;
+}
+
+/*  --------------- media query ------------------*/
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+.navbar-nav{
+    align-items: center;
+}
+}
+@media (max-width: 768px){
+
+    .navbar-nav button {
+        margin-left: 0px !important;
+        width: 111px;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-width: 425px){
+    img.d-block {
+        width: 223% !important;
+    }
+    .clubs{
+        flex-direction: column;
+    }
+    .card-join{
+        height: 160px !important;
+    }
+}
